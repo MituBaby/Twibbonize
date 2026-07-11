@@ -1,0 +1,38 @@
+/* Custom CSS utilities and custom ranges for smoothness */
+
+/* Mencegah highlight biru saat drag di mobile */
+canvas {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: none; /* Penting agar scroll halaman tidak mengganggu drag di mobile */
+}
+
+/* Custom styling styling untuk custom input range agar terlihat lebih menyatu */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4f46e5;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+    box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+    background: #4338ca;
+}
+
+input[type="range"]:disabled::-webkit-slider-thumb {
+    background: #cbd5e1;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Animasi mikro-interaksi */
+.active\:scale-98:active {
+    transform: scale(0.98);
+}
+
