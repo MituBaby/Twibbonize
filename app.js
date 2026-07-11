@@ -38,7 +38,7 @@ let state = {
 
 // --- PATH ASSET TWIBBON ---
 // Ganti string di bawah ini menjadi path file twibbon asli milik Anda, contoh: 'img/twibbon-template.png'
-const TWIBBON_SRC = 'template.png'; 
+const TWIBBON_SRC = 'twibbon.png'; 
 
 // Load Awal: Inisialisasi Template Twibbon
 twibbonImg.crossOrigin = 'anonymous';
